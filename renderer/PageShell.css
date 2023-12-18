@@ -1,0 +1,44 @@
+/* This CSS is common to all pages */
+
+body {
+  margin: 0;
+  font-family: sans-serif;
+}
+* {
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+
+.navitem {
+  padding: 3px 10px;
+}
+.navitem.is-active {
+  background-color: #eee;
+}
+
+/* For Webkit Browsers (Chrome, Safari) */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #776c6c; /* Set the color of the scrollbar thumb */
+  border-radius: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #f0f0f0; /* Set the color of the scrollbar track */
+}
+
+/* For Firefox */
+/* You can customize the colors in the scrollbar-color property */
+/* The first color is for the thumb, and the second one is for the track */
+/* You can also use named colors, hex, rgba, etc. */
+/* Ensure to use a color that provides enough contrast for visibility */
+html {
+  scrollbar-width: thin;
+  scrollbar-color: #776c6c #f0f0f0;
+}
